@@ -19,6 +19,7 @@ build/
 /_yardoc/
 /doc/
 /rdoc/
+/.sass-cache
 
 ## Environment normalisation:
 /.bundle/
@@ -32,3 +33,6 @@ build/
 
 # unless supporting rvm < 1.11.0 or doing something fancy, ignore this:
 .rvmrc
+
+# Ignore build folder
+/_site
