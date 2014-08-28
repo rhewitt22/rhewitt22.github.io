@@ -1,0 +1,39 @@
+/*-----------------------------------*\
+             GRID SETTINGS          
+\*-----------------------------------*/
+
+$susy: (
+  columns: 10,
+  gutters: 1/4,
+  debug: (
+    image: show
+  )
+);
+
+@include border-box-sizing;
+
+/*-----------------------------------*\
+             BREAKPOINTS          
+\*-----------------------------------*/
+
+$small  : 30em;
+$medium : 47em;
+$large  : 75em; 
+
+/*-----------------------------------*\
+                FONTS          
+\*-----------------------------------*/
+
+$font-sans: Roboto Slab, Helvetica, Arial, sans-serif;
+$font-serif: Source Sans Pro, serif;
+
+/*-----------------------------------*\
+                COLORS          
+\*-----------------------------------*/
+
+$base-color: #f5f5f5;
+$link-color: #fb292d;
+$link-hover-color: lighten($link-color, 30);
+$link-active-color: darken($link-color, 30);
+$link-visited-color: $link-color;
+$link-focus-color: $link-active-color;

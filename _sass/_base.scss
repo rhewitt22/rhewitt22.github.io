@@ -14,12 +14,11 @@ dl, dd, ol, ul, figure {
  * Basic styling
  */
 body {
-    font-family: $base-font-family;
-    font-size: $base-font-size;
+    font-family: $font-sans, Helvetica, Arial, sans-serif;
     line-height: $base-line-height;
     font-weight: 300;
-    color: $text-color;
-    background-color: $background-color;
+    color: $base-color;
+    background-color: #fafafa url(../images/cartographer.png);
 }
 
 
@@ -64,6 +63,7 @@ figcaption {
  */
 ul, ol {
     margin-left: $spacing-unit;
+    @include no-bullet;
 }
 
 li {
@@ -88,17 +88,8 @@ h1, h2, h3, h4, h5, h6 {
  * Links
  */
 a {
-    color: $brand-color;
-    text-decoration: none;
-
-    &:visited {
-        color: darken($brand-color, 15%);
-    }
-
-    &:hover {
-        color: $text-color;
-        text-decoration: underline;
-    }
+  @include hover-link;
+  @include link-colors($link-color, $link-hover-color, $link-active-color, $link-visited-color, $link-focus-color);
 }
 
 

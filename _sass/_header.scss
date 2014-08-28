@@ -1,0 +1,16 @@
+.logo {
+  h1 {
+    display: inline;
+  }
+  
+  h2 {
+    margin:0;
+    line-height:100%;
+  }
+  img {
+    width:2em;
+    height:2em;
+    margin-bottom:-0.2em;
+    @include border-radius(50%);
+  }
+}

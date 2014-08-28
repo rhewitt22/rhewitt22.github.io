@@ -1,0 +1,28 @@
+.layout {
+  @include container;
+  padding: 3%;
+
+  #map {
+    display:none;
+
+    @include breakpoint($medium) {
+      display:block;
+      @include span(10 of 10);
+    }
+  }
+
+  .primary {
+    @include span(10 of 10);
+    @include breakpoint($medium) {
+      @include span(6 of 10);
+    } // medium breakpoint
+  } // primary
+
+  .secondary {
+    display:none;
+    @include breakpoint($medium) {
+      display:block;
+      @include span(4 at 7 of 10);
+    } // medium breakpoint
+  } // secondary
+} // layouts 
