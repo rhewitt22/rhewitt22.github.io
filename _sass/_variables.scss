@@ -1,0 +1,42 @@
+/*--------------------------*\
+      Fonts and Spacing
+\*--------------------------*/
+$base-font-family: Helvetica, Arial, sans-serif;
+$base-font-size:   16px;
+$small-font-size:  $base-font-size * 0.875;
+$base-line-height: 24px;
+
+$spacing-unit:     30px;
+
+/*--------------------------*\
+            Colors
+\*--------------------------*/
+
+$text-color:       #111;
+$background-color: #fdfdfd;
+$brand-color:      #2a7ae2;
+
+$grey-color:       #828282;
+$grey-color-light: lighten($grey-color, 40%);
+$grey-color-dark:  darken($grey-color, 25%);
+
+/*--------------------------*\
+          Breakpoints
+\*--------------------------*/
+
+$small:          32em;
+$medium:         47em;
+$large:          70em;
+
+/*--------------------------*\
+        Grid Settings
+\*--------------------------*/
+
+$susy: (
+  columns: 10,
+  gutters: 1/4,
+  debug: (
+    image: show,
+    toggle: top right
+  )
+);

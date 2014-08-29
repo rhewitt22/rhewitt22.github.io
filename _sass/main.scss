@@ -9,36 +9,14 @@
   "breakpoint"
 ;
 
-body {
-  @include border-radius;
-}
-
-// Our variables
-$base-font-family: Helvetica, Arial, sans-serif;
-$base-font-size:   16px;
-$small-font-size:  $base-font-size * 0.875;
-$base-line-height: 24px;
-
-$spacing-unit:     30px;
-
-$text-color:       #111;
-$background-color: #fdfdfd;
-$brand-color:      #2a7ae2;
-
-$grey-color:       #828282;
-$grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark:  darken($grey-color, 25%);
-
-$small:          32em;
-$medium:         47em;
-$large:          70em;
-
-
 /*---------------------------*\
         Import Partials
 \*---------------------------*/
 @import
+  "variables",
   "base",
   "layout",
-  "syntax-highlighting"
+  "syntax-highlighting",
+
+  "header"
 ;
