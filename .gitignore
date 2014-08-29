@@ -20,6 +20,7 @@ build/
 /doc/
 /rdoc/
 /.sass-cache
+/_sass/.sass-cache
 
 ## Environment normalisation:
 /.bundle/

@@ -9,6 +9,9 @@
   "breakpoint"
 ;
 
+body {
+  @include border-radius;
+}
 
 // Our variables
 $base-font-family: Helvetica, Arial, sans-serif;
@@ -26,9 +29,9 @@ $grey-color:       #828282;
 $grey-color-light: lighten($grey-color, 40%);
 $grey-color-dark:  darken($grey-color, 25%);
 
-$on-palm:          600px;
-$on-laptop:        800px;
-
+$small:          32em;
+$medium:         47em;
+$large:          70em;
 
 
 /*---------------------------*\
