@@ -19,8 +19,8 @@ build/
 /_yardoc/
 /doc/
 /rdoc/
-/.sass-cache
-/_sass/.sass-cache
+*.sass-cache
+*.DS_Store
 
 ## Environment normalisation:
 /.bundle/
