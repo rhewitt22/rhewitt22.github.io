@@ -2,12 +2,46 @@ header {
   @include clearfix;
 }//header
 
+.nav-links {
+  float: right;
+  margin: 0 1em;
+
+  a {
+    font-size: 1.25em;
+    @include transition-property(all);
+    @include transition-duration(0.2s);
+    @include transition-timing-function(ease-out);
+    
+    &:hover {
+      text-decoration: none;
+    }//hover
+  }//a
+
+  li {
+    @include transition-property(all);
+    @include transition-duration(0.2s);
+    @include transition-timing-function(ease-out);
+
+    &:hover {
+      border-top: 3px solid $logo-color;
+    }//hover
+  }
+
+  ul {
+    @include inline-block-list;
+
+    li{
+      margin-left: 1em;
+    }//li
+  }//ul
+}//nav-links
+
 .top-nav {
   display: none;
 
   @include breakpoint($medium) {
     display: none;
-  }
+  }//medium
 
   h2 {
     margin: 0;
@@ -38,13 +72,13 @@ header {
   display: inline-block;
   color: $logo-color;
   cursor: pointer;
-  @include transition-property(scale);
+  @include transition-property(all);
   @include transition-duration(.25s);
   @include transition-timing-function(ease-in);
 
   &:hover {
     text-decoration: none;
-    color: $logo-color-hover;
+    color: $accent-color;
     @include scale(1.2);
   }//hover
   
@@ -72,7 +106,6 @@ header {
 
   @include breakpoint($medium) {
     display: block;
-    color: $logo-color;
     cursor: pointer;
 
     span {
@@ -80,9 +113,9 @@ header {
       font-size: 10em;
       margin: .3em;
       float: right;
-      color: $logo-color;
+      color: $accent-color;
       @include transition-property(scale);
-      @include transition-duration(.25s);
+      @include transition-duration(0.3s);
       @include transition-timing-function(ease-in);
 
       &:hover {

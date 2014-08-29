@@ -11,15 +11,11 @@
 
           <li>
             
-            {% if page.isIndex %}
+            {% unless page.isIndex %}
               
-              <h2><a href="{{ page.url }}">{{ page.title }}</a></h2>
-
-            {% else %}
-
               <h3><a href="{{ page.url }}">{{ page.title }}</a></h3>
 
-            {% endif %}
+            {% endunless %}
 
           </li>
 

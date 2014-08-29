@@ -3,7 +3,11 @@
   @include container;
 
     .page-content {
-      @include span(7 of 10);
+      @include span(10 of 10);
+      
+      @include breakpoint($medium) {
+        @include span(6 of 10);
+      }//medium
     }//page-content
 
     .ncsu-sidebar {
@@ -11,7 +15,7 @@
 
       @include breakpoint($medium) {
         display: block;
-        @include span(3 at 8 of 10);
+        @include span(4 at 7 of 10);
       }//medium
       
     }//sidebar
