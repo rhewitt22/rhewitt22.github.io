@@ -1,3 +1,18 @@
 .layout {
-    padding: 3%;
-}
+  padding: 3%;
+  @include container;
+
+    .page-content {
+      @include span(7 of 10);
+    }//page-content
+
+    .ncsu-sidebar {
+      display: none;
+
+      @include breakpoint($medium) {
+        display: block;
+        @include span(3 at 8 of 10);
+      }//medium
+      
+    }//sidebar
+}//layout

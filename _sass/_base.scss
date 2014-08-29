@@ -1,4 +1,13 @@
 /**
+ * Set site-wide box sizing model
+ */
+*, *:before, *:after {
+  -webkit-box-sizing: border-box; 
+  -moz-box-sizing: border-box; 
+  box-sizing: border-box;
+}
+
+/**
  * Reset some basic elements
  */
 body, h1, h2, h3, h4, h5, h6,
@@ -88,8 +97,18 @@ a {
     }
 }
 
+/**
+ * Buttons
+ */
 button {
     @include sassy-button("shiny", 15px, 26px, $button-color, $button-color-dark);
+}
+
+/**
+ * Form elements
+ */
+select {
+    
 }
 
 /**

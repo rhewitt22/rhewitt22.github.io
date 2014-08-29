@@ -1,18 +1,21 @@
 header {
   @include clearfix;
-
 }//header
 
 .top-nav {
   display: none;
 
+  @include breakpoint($medium) {
+    display: none;
+  }
+
   h2 {
     margin: 0;
-  }
+  }//h2
 
   li {
     margin-left: 0;
-  }
+  }//li
 }//nav
 
 #top {
@@ -22,6 +25,10 @@ header {
 .nav-toggle {
   float: right;
   margin: 1em;
+
+  @include breakpoint($medium) {
+    display: none;
+  }//medium
 }//nav-toggle
 
 .logo {
@@ -84,5 +91,4 @@ header {
       }//hover
     }//span
   }//medium
-
 }//msgist
