@@ -8,8 +8,6 @@ dl, dd, ol, ul, figure {
     padding: 0;
 }
 
-
-
 /**
  * Basic styling
  */
@@ -19,10 +17,8 @@ body {
     line-height: $base-line-height;
     font-weight: 300;
     color: $text-color;
-    background-color: $background-color;
+    background: url(../images/cartographer.png) $background-color;
 }
-
-
 
 /**
  * Set `margin-bottom` to maintain vertycal rhythm
@@ -34,8 +30,6 @@ ul, ol, dl, figure,
     margin-bottom: $spacing-unit / 2;
 }
 
-
-
 /**
  * Images
  */
@@ -43,8 +37,6 @@ img {
     max-width: 100%;
     vertical-align: middle;
 }
-
-
 
 /**
  * Figures
@@ -57,13 +49,12 @@ figcaption {
     font-size: $small-font-size;
 }
 
-
-
 /**
  * Lists
  */
 ul, ol {
     margin-left: $spacing-unit;
+    @include no-bullets;
 }
 
 li {
@@ -73,16 +64,12 @@ li {
     }
 }
 
-
-
 /**
  * Headings
  */
 h1, h2, h3, h4, h5, h6 {
     font-weight: 300;
 }
-
-
 
 /**
  * Links
@@ -101,7 +88,9 @@ a {
     }
 }
 
-
+button {
+    @include sassy-button("shiny", 15px, 26px, $button-color, $button-color-dark);
+}
 
 /**
  * Blockquotes
@@ -118,8 +107,6 @@ blockquote {
         margin-bottom: 0;
     }
 }
-
-
 
 /**
  * Code formatting
@@ -147,8 +134,6 @@ pre {
     }
 }
 
-
-
 /**
  * Wrapper
  */
@@ -169,8 +154,6 @@ pre {
     }
 }
 
-
-
 /**
  * Clearfix
  */
@@ -182,8 +165,6 @@ pre {
         clear: both;
     }
 }
-
-
 
 /**
  * Icons

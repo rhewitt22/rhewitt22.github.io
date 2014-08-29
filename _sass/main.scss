@@ -6,7 +6,8 @@
 @import 
   "compass",
   "susy",
-  "breakpoint"
+  "breakpoint",
+  "sassy-buttons"
 ;
 
 /*---------------------------*\
@@ -14,6 +15,7 @@
 \*---------------------------*/
 @import
   "variables",
+  "fonts",
   "base",
   "layout",
   "syntax-highlighting",

@@ -2,7 +2,8 @@
       Fonts and Spacing
 \*--------------------------*/
 $base-font-family: 'PT Sans', Helvetica, Arial, sans-serif;
-$base-font-serif: 'Merriweather', "Times New Roman", Times,serif;
+$base-font-serif:  'Merriweather', "Times New Roman", Times,serif;
+$stateface:        'statefaceregular';
 $base-font-size:   16px;
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 24px;
@@ -13,9 +14,14 @@ $spacing-unit:     30px;
             Colors
 \*--------------------------*/
 
-$text-color:       #111;
+$text-color:       white;
 $background-color: #fdfdfd;
 $brand-color:      #2a7ae2;
+$logo-color:       white;
+$logo-color-hover: white;
+
+$button-color: #C0C0C0;
+$button-color-dark: darken($button-color, 30);
 
 $grey-color:       #828282;
 $grey-color-light: lighten($grey-color, 40%);

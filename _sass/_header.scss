@@ -1,30 +1,88 @@
 header {
+  @include clearfix;
 
-  nav {
-    display: none;
+}//header
 
-    @include breakpoint($medium) {
-      display: block;
-    }// medium
-  }// nav
-}// header
+.top-nav {
+  display: none;
+
+  h2 {
+    margin: 0;
+  }
+
+  li {
+    margin-left: 0;
+  }
+}//nav
+
+#top {
+  @include clearfix;
+}//top
+
+.nav-toggle {
+  float: right;
+  margin: 1em;
+}//nav-toggle
 
 .logo {
+  float: left;
   margin: 2em;
+  font-family: $base-font-serif;
+  display: inline-block;
+  color: $logo-color;
+  cursor: pointer;
+  @include transition-property(scale);
+  @include transition-duration(.25s);
+  @include transition-timing-function(ease-in);
+
+  &:hover {
+    text-decoration: none;
+    color: $logo-color-hover;
+    @include scale(1.2);
+  }//hover
   
   h1 {
     display: inline;
-    font-size: 2.5em;
-  }
+    font-size: 3.25em;
+  }//h2
 
   h2 {
-    font-size: 2.5em;
-  }
+    font-size: 3.25em;
+    margin-top: .2em;
+  }//h2
   
   img {
     @include border-radius(50%);
     width: 3em;
     height: 3em;
-    margin-top: -1em;
-  }
-}// logo
+    margin-top: -1.5em;
+    border: .25em solid $logo-color;
+  }//img
+}//logo
+
+.msgist {
+  display: none;
+
+  @include breakpoint($medium) {
+    display: block;
+    color: $logo-color;
+    cursor: pointer;
+
+    span {
+      font-family: $stateface;
+      font-size: 10em;
+      margin: .3em;
+      float: right;
+      color: $logo-color;
+      @include transition-property(scale);
+      @include transition-duration(.25s);
+      @include transition-timing-function(ease-in);
+
+      &:hover {
+        @include scale(1.2);
+        color: $logo-color;
+      }//hover
+    }//span
+  }//medium
+
+}//msgist
