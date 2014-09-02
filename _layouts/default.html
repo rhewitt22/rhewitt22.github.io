@@ -7,11 +7,18 @@
 
     {% include header.html %}
 
-    <div class="page-content">
-      <div class="wrapper">
-        {{ content }}
+    <section class="layout">
+      <div class="page-content">
+        <div class="wrapper">
+          {{ content }}
+        </div>
       </div>
-    </div>
+      {% if page.course == "GIS 520: Advanced Geospatial Analytics" %}
+
+        {% include ncsu-sidebar.html %}
+        
+      {% endif%}
+    </section>
 
     {% include footer.html %}
 

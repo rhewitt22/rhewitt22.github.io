@@ -1,3 +1,21 @@
+<<<<<<< HEAD
+.logo {
+  h1 {
+    display: inline;
+  }
+  
+  h2 {
+    margin:0;
+    line-height:100%;
+  }
+  img {
+    width:2em;
+    height:2em;
+    margin-bottom:-0.2em;
+    @include border-radius(50%);
+  }
+}
+=======
 header {
   @include clearfix;
 }//header
@@ -125,3 +143,4 @@ header {
     }//span
   }//medium
 }//msgist
+>>>>>>> 37882f2701033c88e8f8f6da0af93624c46c34e4

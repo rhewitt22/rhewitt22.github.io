@@ -1,27 +1,59 @@
-<header class="site-header">
-
-  <div class="wrapper">
-
-    <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
-
-    <nav class="site-nav">
-      <a href="#" class="menu-icon">
-        <svg viewBox="0 0 18 15">
-          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
-          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
-          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
-        </svg>
+<header>
+  <div class="layout">
+    <div id="top">
+      <a class="logo" href="/">
+        <h1>R</h1>
+        <img src="{{ site.baseurl }}/images/roy.jpg" alt="O" title="Hi :P">
+        <h1>Y</h1>
+        <h2>Hewitt</h2>
       </a>
 
-      <div class="trigger">
-        {% for page in site.pages %}
-          {% if page.title %}
-          <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
-          {% endif %}
-        {% endfor %}
-      </div>
+      <section class="msgist">
+        <a href="http://geospatial.ncsu.edu/education/programs/mgist/" alt="MGIST" title="MGIST">
+          <span>a</span>
+        </a> <!-- north carolina webfont http://propublica.github.io/stateface/ -->
+      </section>
+      <button class="nav-toggle fa fa-bars"></button>
+    </div>
+    
+    <nav class="nav-links">
+      <ul>
+        <a href="{{ site.baseurl }}/about"><li>about</li></a>
+        <a href="{{ site.baseurl }}/gis-520"><li>gis 520</li></a>
+      </ul>
     </nav>
-
+    <nav class="top-nav">
+      <ul>
+        <li><h2>Geospatial Data Issues</h2>
+          <ul>
+            <li><a href="">Turning Data into Information withArcGIS</a></li>
+            <li><a href="">Conceptualizing Geospatial Problem Solving</a></li>
+            <li><a href="">Geocoding Tabular Data</a></li>
+            <li><a href="">AutoCAD Integration</a></li>
+          </ul>
+        </li>
+        <li><h2>Geospatial Analytics with Vector Data</h2>
+          <ul>
+            <li><a href="">Data Cardinality</a></li>
+            <li><a href="">Working with US Census Data</a></li>
+            <li><a href="">Linear Referencing</a></li>
+            <li><a href="">Spatial Statistics</a></li>
+          </ul>
+        </li>
+        <li><h2>Geospatial Analytics with Raster Data</h2>
+          <ul>
+            <li><a href="">Using Raster Data for Site Selection</a></li>
+            <li><a href="">Suitability Analysis and Weighted Overlay</a></li>
+            <li><a href="">Image Classification</a></li>
+          </ul>
+        </li>
+        <li><h2>Customization</h2>
+          <ul>
+            <li><a href="">Elementary Customization for ArcMap</a></li>
+            <li><a href="">Work on Course Portfolio</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
   </div>
-
 </header>

@@ -1,0 +1,28 @@
+<aside class="ncsu-sidebar">
+
+  <h1>Course Navigation</h1>
+
+  <ul>
+    {% for page in site.pages %}
+
+      {% if page.course == "GIS 520: Advanced Geospatial Analytics" %}
+
+        {% for topic in page.topic %}
+
+          <li>
+            
+            {% unless page.isIndex %}
+              
+              <h3><a href="{{ page.url }}">{{ page.title }}</a></h3>
+
+            {% endunless %}
+
+          </li>
+
+        {% endfor %}
+
+      {% endif %}
+      
+    {% endfor %}
+  </ul>
+</aside>

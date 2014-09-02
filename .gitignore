@@ -19,6 +19,8 @@ build/
 /_yardoc/
 /doc/
 /rdoc/
+*.sass-cache
+*.DS_Store
 
 ## Environment normalisation:
 /.bundle/
@@ -32,3 +34,7 @@ build/
 
 # unless supporting rvm < 1.11.0 or doing something fancy, ignore this:
 .rvmrc
+
+# Ignore built folders
+/_site
+/css

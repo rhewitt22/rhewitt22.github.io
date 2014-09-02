@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro|Roboto+Slab);
+@import url(http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css);
+=======
 @import url(http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css);
 @import url(http://fonts.googleapis.com/css?family=PT+Sans|Merriweather);
 
@@ -19,3 +23,4 @@
   font-style: normal;
   // color:white;
 }
+>>>>>>> 37882f2701033c88e8f8f6da0af93624c46c34e4

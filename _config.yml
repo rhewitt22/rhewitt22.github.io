@@ -1,20 +1,16 @@
 # Site settings
-title: GIS520 Course Portfolio
-email: royhewitt07@gmail.com
+title: GIS 520 Portfolio
 description: > # this means to ignore newlines until "baseurl:"
-  Roy Hewitt's GIS 520 course portfolio.  This course is part of the
-  North Carolina State University GIS & Technology Masters Program/Certificate
+  Roy Hewitt's GIS 520 Course Portfolio as part of the NC State
+  Master's in GIS & Technology Certificate Program
 baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://royhewitt.com" # the base hostname & protocol for your site
 
+email: royhewitt07@gmail.com
 twitter_username: r0yhewitt
 github_username:  rhewitt22
 
-gems:
- - compass
- - susy
- - breakpoint
+highlighter: rouge
 
 # Build settings
 markdown: kramdown
-
-highlighter: rouge

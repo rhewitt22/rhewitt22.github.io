@@ -21,12 +21,16 @@ dl, dd, ol, ul, figure {
  * Basic styling
  */
 body {
-    font-family: $base-font-family;
-    font-size: $base-font-size;
+    font-family: $font-sans, Helvetica, Arial, sans-serif;
     line-height: $base-line-height;
     font-weight: 300;
+<<<<<<< HEAD
+    color: $base-color;
+    background-color: #fafafa url(../images/cartographer.png);
+=======
     color: $text-color;
     background: url(../images/cartographer.png) $background-color;
+>>>>>>> 37882f2701033c88e8f8f6da0af93624c46c34e4
 }
 
 /**
@@ -63,7 +67,11 @@ figcaption {
  */
 ul, ol {
     margin-left: $spacing-unit;
+<<<<<<< HEAD
+    @include no-bullet;
+=======
     @include no-bullets;
+>>>>>>> 37882f2701033c88e8f8f6da0af93624c46c34e4
 }
 
 li {
@@ -84,6 +92,10 @@ h1, h2, h3, h4, h5, h6 {
  * Links
  */
 a {
+<<<<<<< HEAD
+  @include hover-link;
+  @include link-colors($link-color, $link-hover-color, $link-active-color, $link-visited-color, $link-focus-color);
+=======
     color: $accent-color;
     text-decoration: none;
     @include transition-property(all);
@@ -94,6 +106,7 @@ a {
         color: $brand-color;
         text-decoration: underline;
     }
+>>>>>>> 37882f2701033c88e8f8f6da0af93624c46c34e4
 }
 
 /**
