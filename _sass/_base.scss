@@ -114,11 +114,11 @@ select {
  * Blockquotes
  */
 blockquote {
-    color: $grey-color;
-    border-left: 4px solid $grey-color-light;
+    color: $accent-color;
+    border-left: 4px solid $accent-color;
     padding-left: $spacing-unit / 2;
-    font-size: 18px;
-    letter-spacing: -1px;
+    font-size: 2em;
+    line-height: $blockquote-line-height;
     font-style: italic;
 
     > :last-child {
@@ -132,6 +132,7 @@ blockquote {
 pre,
 code {
     font-size: 15px;
+    color: $accent-color;
     border: 1px solid $grey-color-light;
     border-radius: 3px;
     background-color: #eef;

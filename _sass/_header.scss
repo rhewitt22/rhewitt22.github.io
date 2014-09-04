@@ -78,7 +78,6 @@ header {
 
   &:hover {
     text-decoration: none;
-    color: $accent-color;
     @include scale(1.2);
   }//hover
   
@@ -113,14 +112,13 @@ header {
       font-size: 10em;
       margin: .3em;
       float: right;
-      color: $accent-color;
+      color: $logo-color;
       @include transition-property(scale);
       @include transition-duration(0.3s);
       @include transition-timing-function(ease-in);
 
       &:hover {
         @include scale(1.2);
-        color: $logo-color;
       }//hover
     }//span
   }//medium
