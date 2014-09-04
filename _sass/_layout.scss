@@ -17,6 +17,10 @@
         display: block;
         @include span(4 at 7 of 10);
       }//medium
+
+      @include breakpoint($large) {
+        @include span(3 at 8 of 10);
+      }//large
       
     }//sidebar
 }//layout
