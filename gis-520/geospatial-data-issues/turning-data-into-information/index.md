@@ -4,8 +4,9 @@ layout: default
 
 course: "GIS 520: Advanced Geospatial Analytics"
 topic: "Geospatial Data Issues"
+order: 1
 
-esri-course: true
+esri-course: http://training.esri.com/gateway/index.cfm?fa=catalog.webCourseDetail&CourseID=2017
 ---
 
 {{ page.title }}
