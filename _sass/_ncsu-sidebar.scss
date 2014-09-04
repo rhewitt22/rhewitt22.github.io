@@ -29,6 +29,9 @@
     &:hover {
       margin-left: 1em;
       text-decoration: none;
+      &:before {
+        content: ">  "; // adds an arrow on hover before each link
+      }//before
     }//hover
   }//a
 }//sidebar
