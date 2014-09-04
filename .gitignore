@@ -36,7 +36,8 @@ build/
 .rvmrc
 
 # Ignore built files/folders
-/_site
+/_site*
 /css
 *feed.xml
+_site*
 
