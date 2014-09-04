@@ -1,0 +1,7 @@
+{% for topic in page.topic %}
+  {% unless page.isIndex %}
+  <li>
+    <h3><a href="{{ page.url }}">{{ page.title }}</a></h3>
+  </li>
+  {% endunless %}
+{% endfor %}
