@@ -3,23 +3,20 @@
   <h1>Course Navigation</h1>
 
   <ul>
-    {% for page in site.pages %}
+    {% assign sorted_pages = (site.pages | sort: 'order') %}
+    {% for page in sorted_pages %}
 
       {% if page.course == "GIS 520: Advanced Geospatial Analytics" %}
 
-        {% for topic in page.topic %}
-
-          <li>
+        <li>
+          
+          {% unless page.isIndex %}
             
-            {% unless page.isIndex %}
-              
-              <h3><a href="{{ page.url }}">{{ page.title }}</a></h3>
+            <h3><a href="{{ page.url }}">{{ page.title }}</a></h3>
 
-            {% endunless %}
+          {% endunless %}
 
-          </li>
-
-        {% endfor %}
+        </li>
 
       {% endif %}
       

@@ -27,7 +27,8 @@ This course also introduces the concept of spatial autocorrelation.  This princi
 
 Spatial autocorrelation can be positive (features similar in location are also similar in attributes), negative (features that are similar in location are dissimilar in attributes), or neutral (attributes are independent of location).  No Geography course would be complete without mentioning Tobler's 1st Law of Geography:
 
-> Everything is related to everything else, but near things are more related than distant things.
+> Everything is related to everything else, but near things are more related than distant things.  
+> - Waldo R. Tobler
 
 In instances where it is infeasible or impossible to fully sample a given area we can rely on interpolation methods. Spatial interpolation is the process of taking an input of sample points and generating a surface by filling in the gaps with a mathematical "best guess".  Two such methods include [Inverse Distance Weighting](http://resources.arcgis.com/en/help/main/10.2/index.html#//00310000002m000000), and [Kriging](http://resources.arcgis.com/en/help/main/10.2/index.html#//009z00000076000000) -- each with it's own strengths and weaknesses.
 
