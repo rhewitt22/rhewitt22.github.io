@@ -15,7 +15,8 @@ GIS 520: Advanced Geospatial Analytics.</p>
 <p>This course has four main topics including:</p>
 
 <ul>
-  {% for page in site.pages %}
+  {% assign sorted_pages = (site.pages | sort: 'indexOrder') %}
+  {% for page in sorted_pages %}
     {% if page.isIndex %}
       <a href="{{ page.url }}"><li>{{ page.topic }}</li></a>
     {% endif %}

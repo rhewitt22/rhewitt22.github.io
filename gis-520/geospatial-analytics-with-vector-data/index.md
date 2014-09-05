@@ -6,6 +6,7 @@ course: "GIS 520: Advanced Geospatial Analytics"
 topic: "Geospatial Analytics with Vector Data"
 
 isIndex: true
+indexOrder: 2
 ---
 
 {{ page.title }}
