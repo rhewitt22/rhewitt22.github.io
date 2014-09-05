@@ -117,6 +117,8 @@ blockquote {
     color: $accent-color;
     border-left: 4px solid $accent-color;
     padding-left: $spacing-unit / 2;
+    margin-left: 2em;
+    margin-right: 2em;
     font-size: 2em;
     line-height: $blockquote-line-height;
     font-style: italic;
