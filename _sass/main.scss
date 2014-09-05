@@ -25,3 +25,8 @@
   "about",
   "footer"
 ;
+
+.last-modified {
+  @include clearfix;
+  text-align: center;
+}
