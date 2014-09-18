@@ -16,13 +16,18 @@
 
         {% include ncsu-sidebar.html %}
         
-      {% endif%}
+      {% endif %}
     </section>
 
     <div class="last-modified">Last Updated: {% last_modified_at %B %d, %Y %}</div>
     
     {% include footer.html %}
 
+    <script src="{{ site.baseurl }}/scripts/vendor/jquery/jquery-1.11.1.js"></script>
+    <script src="{{ site.baseurl }}/scripts/navigation.js"></script>
+    {% if page.course == "GIS 520: Advanced Geospatial Analytics" %}
+      <script src="{{ site.baseurl }}/scripts/vendor/mojoSidebar/stickyMojo.js"></script>
+    {% endif %}
   </body>
 
 </html>

@@ -11,9 +11,8 @@ twitter_username: r0yhewitt
 github_username:  rhewitt22
 
 highlighter: rouge
+gems:
+ - jekyll-last-modified-at
 
 # Build settings
 markdown: kramdown
-
-gems:
- - jekyll-last-modified-at

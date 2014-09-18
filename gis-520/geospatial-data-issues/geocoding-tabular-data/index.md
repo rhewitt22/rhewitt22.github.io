@@ -7,17 +7,14 @@ topic: "Geospatial Data Issues"
 order: 3
 ---
 
-# {{ page.title }}
-
-## {{ page.course }}
-
-### {{ page.topic }}
+{% include topic-header.html %}
 
 ## Problem:
 
 A local business has chosen me to conduct a geographic analysis of their customer base near Raleigh, North Carolina.  The goal of the analysis is to assist the business in targeting an advertising campaign to expand their customer base in Wake County, North Carolina.  The business collects customer address information, but is unsure how to visualize their customer base on a map.  My job is to convert their database of customers into a geographic dataset that can be used to conduct further spatial analysis.
 
-## Analysis Procedures: 
+## Analysis Procedures:
+
 ### Strategies:
 
 The solution to this problem is not new, and is one of the main business applications of Geographic Information Systems.  The process of Geocoding and Reverse Geocoding involve the conversion of natural language representations of a location (or table of locations) into a geographic dataset, and visa-versa.  ArcGIS has geocoding tools and services built-in that allow us to batch convert addresses to a point shapefile or feature class.
