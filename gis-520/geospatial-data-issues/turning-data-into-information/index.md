@@ -37,7 +37,11 @@ This analysis will use ArcGIS's Spatial Analyst extension.  I will select only t
 
 To complete this analysis I used two input raster layers with the goal of finding all residential areas that fall within the flood zone.  The easiest method for completing this analysis is to use raster math.  This technique requires reclassifying the input rasters to binary values.  The areas that we are interested in (residential zones, the flood zone) will have a value of one, while all other areas have a value of zero.  
 
-With residential land use pixels and flood zone pixels scored as one, and all other pixels scored zero we simply multiply the two layers.  Any land use type other than residential when multiplied will result in a final score of zero.  Our final map shows our desired result: residential areas that fall within a flood zone.  This information can be used by insurance adjusters to set home/flood insurance rates.  
+With residential land use pixels and flood zone pixels scored as one, and all other pixels scored zero we simply multiply the two layers.  Any land use type other than residential when multiplied will result in a final score of zero.  Our final map shows our desired result: residential areas that fall within a flood zone.  This information can be used by insurance adjusters to set home/flood insurance rates. 
+
+![Flood Zone Diagram]({{ site.baseurl }}/images/gis520/module1-diagram.png "Flood Zone analysis Method Diagram")
+
+The image above shows the steps involved in this analysis.
 
 ![Residential areas in the Flood zone]({{ site.baseurl }}/images/gis520/floodPlain.png "Residential areas in the Flood zone")
 
@@ -82,6 +86,8 @@ Using a GIS to visualize spatial datasets gives us the ability to explore our da
 
 ArcGIS provides a cartographic tool for simplifying lines and polygons.  For this exercise I will reduce the amount of detail in the original Coastline feature by creating a simplified version.  To complete this technique I would display only the simplified features at 1:200,000 and above.  When I zoom to larger scale the simplified coastline will turn off, and the more complex coastline will be turned on.
 
+![Scale dependent Features]({{ site.baseurl }}/images/gis520/module2-diagram.png "Scale dependent Features")
+
 ### Discussion:
 
 #### Difficulties:
@@ -122,6 +128,10 @@ Once I have my environmental factors I'll consider the accessibility of my locat
 
 Finally I combine all of these rasters to find only those cells with a value of one for each of the different raster layers.  
 
+![Vineyard Siting Analysis]({{ site.baseurl }}/images/gis520/module3-diagram.png "Vineyard Siting Analysis")
+
+The diagram above shows the analysis steps used to isolate potential vineyard sites.  Geographic features are in blue, geoprocessing tasks are in light red, queries and measurements are in orange, and the final output is in dark red.  The intermediate rasters (Good [variable]) have a value of 1 if they meet the query criteria and a value of 0 if they do not.  To get the final output these intermediate rasters are multiplied together; any cell that has a value of 0 for will be excluded from the final output.
+
 ### Discussion:  
 
 #### Difficulties:  
@@ -158,13 +168,11 @@ Creating an interpolated surface of any variable can be useful in describing a s
 
 #### Methods:
 
-In the interpolation exercise from this module we were given a feature class of sample locations describing elevation.  We used these elevation points as the input for two different interpolation methods: Kriging and Inverse Distance Weighting (IDW).  Each method produces a continuous elevation surface by filling in the gaps between sampling points.
+In the interpolation exercise from this module we were given a feature class of sample locations describing elevation.  We used these elevation points as the input for two different interpolation methods: Kriging and Inverse Distance Weighting (IDW).  Each method produces a continuous elevation surface by filling in the gaps between sampling points.  We then created a hillshade for each surface to as a cartographic technique to exemplify the differences between the two methods.  We repeated the process above with the same sample dataset once more for each interpolation method after reducing the number of sample points by 5% then compared the results.
 
-![Swipe Tool]({{ site.baseurl }}/images/gis520/KrigIDWSwipe.gif "Swipe Tool: IDW vs. Kriging")
+![Comparing Interpolation Methods]({{ site.baseurl }}/images/gis520/module4-diagram.png "Comparing Interpolation Methods")
 
-The image above shows two different interpolation techniques, IDW vs. Kriging, on the same input dataset.  This is also an example of geovisualization using ESRI's built in &#8220;swipe&#8221; tool.
-
-
+The diagram above shows the first iteration of this exercise.  The blue element is our input sample points.  The red arrows represent geoprocessing tasks with the purple elements representing the tool inputs.  Finally the dark red elements are the final outputs from the exercise.
 
 ### Discussion:  
 
@@ -175,6 +183,10 @@ I didn't experience any difficulties completing this exercise, but there are dif
 It can be difficult to get a representative sample of a given area.  Private landowners may not grant you access to sample their land.  You may be sampling an area with extremely dense vegetation, which could make it difficult to sample throughout the entire area.
 
 #### Evaluation:
+
+![Swipe Tool]({{ site.baseurl }}/images/gis520/KrigIDWSwipe.gif "Swipe Tool: IDW vs. Kriging")
+
+The image above shows two different interpolation techniques, IDW vs. Kriging, on the same input dataset.  This is also an example of geovisualization using ESRI's built in &#8220;swipe&#8221; tool.
 
 The results of both interpolation methods appear to be accurate.  The two different techniques employ different methodologies, which explains why the two surfaces had different outputs.  The sample points we were given were fairly well distributed.  If, instead, there was lots of clustering I would trust the results of Kriging over IDW because Kriging takes clustering into account.
 
@@ -202,6 +214,11 @@ We will be using a series of raster datasets to find the least-cost path for the
 
 We will be categorizing the cost of construction based on slope, cost-weighted distance analysis, and land-use through using raster math.  Higher grades of slope require additional engineering, which in turn raises costs.  As the total distance of the power line increases so does cost.  Finally, certain land-cover types are associated with increased costs as well.  For example it is much more cost effective to traverse abandoned or vacant land than commercial or residential areas.
 
+![Least Cost Path]({{ site.baseurl }}/images/gis520/module5-diagram.png "Optimization: Least Cost Path")
+
+The diagram above shows the analysis steps required to find the least cost path for the new power line connecting the power plant with the Jamula substation.  Inputs are in blue, intermediate files are in green, geoprocessing tasks are in light red, and the final output is in dark red.  In some cases where back-to-back geoprocessing tasks were required the intermediate file was left out of the diagram for succinctness.
+
+The diagram above shows
 
 ### Discussion:  
 
@@ -212,7 +229,7 @@ We will be categorizing the cost of construction based on slope, cost-weighted d
 
 ![Least Cost Path]({{ site.baseurl }}/images/gis520/leastCostPath.png "Least Cost Path")
 
-The image above shows the least-cost path for construction of a new power line connecting a power plant with a substation.
+The dashed green line in the image above shows the least-cost path for construction of a new power line connecting a power plant with a substation.
 
 ### Application &amp; Reflection:
 
