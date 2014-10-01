@@ -4,7 +4,7 @@ layout: default
 
 course: "GIS 520: Advanced Geospatial Analytics"
 topic: "Geospatial Data Issues"
-order: 3
+order: 2
 ---
 
 {% include topic-header.html %}

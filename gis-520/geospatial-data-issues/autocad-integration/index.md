@@ -4,7 +4,7 @@ layout: class
 
 course: "GIS 520: Advanced Geospatial Analytics"
 topic: "Geospatial Data Issues"
-order: 4
+order: 3
 ---
 
 {% include topic-header.html %}
