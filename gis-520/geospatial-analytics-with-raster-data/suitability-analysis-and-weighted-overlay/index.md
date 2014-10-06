@@ -7,11 +7,4 @@ topic: "Geospatial Analytics with Raster Data"
 order: 10
 ---
 
-{{ page.title }}
-====================
-
-{{ page.course }}
----------------------
-
-{{ page.topic }}
----------------------
+{% include topic-header.html %}

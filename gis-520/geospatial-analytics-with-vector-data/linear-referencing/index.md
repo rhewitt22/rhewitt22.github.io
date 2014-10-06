@@ -7,11 +7,4 @@ topic: "Geospatial Analytics with Vector Data"
 order: 7
 ---
 
-{{ page.title }}
-====================
-
-{{ page.course }}
----------------------
-
-{{ page.topic }}
----------------------
+{% include topic-header.html %}

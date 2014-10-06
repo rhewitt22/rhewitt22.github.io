@@ -9,8 +9,4 @@ isIndex: true
 indexOrder: 3
 ---
 
-{{ page.title }}
-====================
-
-{{ page.course }}
----------------------
+{% include topic-header.html %}

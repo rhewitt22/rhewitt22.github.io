@@ -7,11 +7,4 @@ topic: "Customization"
 order: 12
 ---
 
-{{ page.title }}
-====================
-
-{{ page.course }}
----------------------
-
-{{ page.topic }}
----------------------
+{% include topic-header.html %}
