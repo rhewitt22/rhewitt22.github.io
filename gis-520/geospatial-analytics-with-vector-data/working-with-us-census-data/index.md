@@ -7,11 +7,31 @@ topic: "Geospatial Analytics with Vector Data"
 order: 6
 ---
 
-{{ page.title }}
-====================
+{% include topic-header.html %}
 
-{{ page.course }}
----------------------
+## Problem
 
-{{ page.topic }}
----------------------
+
+
+## Analysis Procedures
+
+### Strategies
+
+
+
+### Methods
+
+
+
+## Discussion
+
+### Difficulties
+
+
+
+### Evaluation
+
+
+
+## Application & Reflection
+
