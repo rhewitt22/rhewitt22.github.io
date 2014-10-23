@@ -68,7 +68,7 @@ This simple raster analysis is a common technique in the world of natural resour
 
 This use-case wouldn't be as cut-and-dry as whether a house falls within a flood zone or not as species can survive in sub-optimal habitat.  A particular pixel should not be discarded just because it doesn't meet every single habitat requirement.  It this case we might use a habitat quality scale where we aggregate the different layer scores into a raster representing habitat quality.  We could then further classify those scores into groups such as Optimal, Marginal, and Poor.  With this knowledge we could prioritize surveys for the rare species in the optimal habitat.
 
-[{% icon fa-arrow-up %} Back to top](#top)
+[Back to top](#top)
 
 ## Module II: Cartography, Map Production, and Geovisualization
 
@@ -106,7 +106,7 @@ In the image above contrasts the two coastline shapefiles showing two levels of 
 
 My job as a Regional GIS professional requires that I work at varying spatial scales.  My agency has over a dozen field stations in the Southeast that collect and work with data at much larger scales on a daily basis.  When aggregating or comparing datasets region-wide it is important to keep scale in mind.  I often use the simplify tool in my cartographic products to account for different scales.
 
-[{% icon fa-arrow-up %} Back to top](#top)
+[Back to top](#top)
 
 ## Module III: Query and Measurement  
 
@@ -150,7 +150,7 @@ Most of the factors in this raster analysis were fairly well distributed across 
 
 This exercise is similar to the flood zone exercise from module one.  The difference here is that we're considering a larger number of layers, and we're combining both raster and vector input layers.  The directions for this exercise suggest testing that each individual layer is equal to a value of 1.  We could just as easily multiply the separate rasters together.  Any layer with a value of zero (unsuitable for growing grapes) would remove that cell from consideration in our final raster, because any number multiplied by zero equals zero.
 
-[{% icon fa-arrow-up %} Back to top](#top)
+[Back to top](#top)
 
 ## Module IV: Transformations and Descriptive Summaries
 
@@ -194,7 +194,7 @@ The results of both interpolation methods appear to be accurate.  The two differ
 
 Interpolation techniques are common in natural resource management agencies.  This is a great technique for surveying the presence of submerged aquatic vegetation (SAV) in the Chesapeake Bay.  Without interpolation SAV surveys would be very difficult and costly and might require divers to visually inspect large swaths of the bay's floor.  Instead we can drag an SAV rake from a boat at random sample locations to collect species and density information.  Given these points we can use interpolation techniques to create a surface that shows the distribution and density of different SAV species.  SAV is an important indicator of ecosystem health so the interpolated surfaces could be used to target restoration work.
 
-[{% icon fa-arrow-up %} Back to top](#top)
+[Back to top](#top)
 
 ## Module V: Optimization and Hypothesis Testing
 
@@ -235,7 +235,7 @@ The dashed green line in the image above shows the least-cost path for construct
 
 With the explosion of natural gas development in the United States development of energy infrastructure is growing rapidly.  As a natural resource management agency we are charged with maintaining biodiversity even with increased pressure from development.  Pipeline projects that connect natural gas pads with refineries must comply with State and Federal law.  Both developers and biologists must consider the same regulations and geographic data when proposing and approving development projects.  Pipeline projects would use very similar methods as those completed in this exercise in order to minimize costs not only of construction, but also degradation of wildlife habitat. Often times these types of projects cannot completely avoid wildlife and their habitat, and are thus required to mitigate any damage by restoring other habitat for the benefit of wildlife.
 
-[{% icon fa-arrow-up %} Back to top](#top)
+[Back to top](#top)
 
 ## Module VI: Uncertainty
 
@@ -269,4 +269,4 @@ We can use our confusion matrix to estimate how likely our photo interpretations
 
 I often find that consumers of maps assume that the data used is valid and properly applied to a given problem or scenario.  I suspect this comes from the fact that any map you review requires a certain amount of personal analysis.  Since the reader is coming to their own conclusions they don't hesitate to accept them.  At times the reader of a map is unaware that the cartographer has intentionally led them to a certain conclusion.  Any GIS practitioner that has read [how to lie with maps](http://www.markmonmonier.com/how_to_lie_with_maps_14880.htm) knows how easy it is to manipulate the impression left on your map's end-user.  With that said it is important to not only understand the limitations of a dataset you are prepared to map, but to clearly state the limitations to your readers before you dive into any real analysis.
 
-[{% icon fa-arrow-up %} Back to top](#top)
+[Back to top](#top)
